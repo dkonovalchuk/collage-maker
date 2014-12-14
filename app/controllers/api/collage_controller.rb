@@ -12,7 +12,7 @@ module Api
     end
 
     def collage_service
-      @collage_service ||= CollageService.new(params[:pics])
+      @collage_service ||= CollageService.new(params, self)
     end
   end
 end

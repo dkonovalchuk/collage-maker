@@ -12,7 +12,6 @@ gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 
-gem 'rmagick'
 gem 'imgkit'
 
 gem 'pry'

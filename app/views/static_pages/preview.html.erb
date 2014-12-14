@@ -2,25 +2,81 @@
 <html class="collage">
 <head>
   <title>Collage</title>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    html, body {
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+    }
+
+    .collage {
+      width: 678px;
+      font-family: Roboto;
+    }
+
+    .collage h3 {
+      margin-top: 10px;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+
+    .collage .item-wrapper {
+      border: 1px solid #ccc;
+      float: left;
+      padding: 15px;
+      width: 300px;
+      margin-left: -1px;
+      margin-bottom: -1px;
+    }
+
+    .collage .item-wrapper .image-container {
+      overflow: hidden;
+      height: 200px;
+      width: 300px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+
+    .collage .item-wrapper .item-name {
+      font-size: 20px;
+      padding-top: 10px;
+    }
+
+    .collage .item-wrapper .item-store-name {
+      font-weight: 100;
+      color: #999;
+      padding-top: 5px;
+    }
+
+    .collage .item-wrapper .item-bottom {
+      margin-top: 5px;
+    }
+
+    .collage .item-wrapper .item-bottom .item-price {
+      border: 1px solid #6BB91F;
+      border-radius: 5px;
+      color: #6BB91F;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 5px;
+    }
+
+  </style>
 </head>
 <body>
   <div class="container collage">
     <div class="row">
       <div class="col-md-12">
-        <h3>FASTBITE - DEC 23, 2015 DINNER MENU</h3>
+        <h3><%= menu_title %></h3>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-12">
-        <% 4.times do %>
-          <%= render "static_pages/item" %>
-        <% end %>
-      </div>
+      <% items.each do |item| %>
+        <%= render "static_pages/item", item: item %>
+      <% end %>
     </div>
   </div>
 </body>
