@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="collage">
+<head>
+  <title>Collage</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container collage">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>FASTBITE - DEC 23, 2015 DINNER MENU</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <% 4.times do %>
+          <%= render "static_pages/item" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

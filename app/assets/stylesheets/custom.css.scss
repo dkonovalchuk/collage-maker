@@ -1,0 +1,49 @@
+.collage {
+  width: 800px;
+  font-family: Roboto;
+  margin: 0;
+
+  h3 {
+    margin-top: 10px;
+    font-weight: 300;
+  }
+
+  .item-wrapper {
+    border: 1px solid #ccc;
+    float: left;
+    padding: 15px;
+    width: 385px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+
+    .image-container {
+      overflow: hidden;
+      height: 200px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+
+    .item-name {
+      font-size: 20px;
+    }
+
+    .item-store-name {
+      font-weight: 300;
+    }
+
+    .item-bottom {
+      margin-top: 5px;
+
+      .item-price {
+        border: 1px solid #6BB91F;
+        border-radius: 5px;
+        color: #6BB91F;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px;
+      }
+    }
+  }
+}
