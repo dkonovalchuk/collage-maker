@@ -5,49 +5,29 @@
       name: "Pineapple Fried Rice",
       store: "Basil Thai",
       cost: "$9.00",
-      image: "http://www.recipematcher.com/assets/photos/recipes/large/9382c32ee2a69a0c40c1c315230460ff.jpg"
+      image: "http://www.recipematcher.com/assets/photos/recipes/large/9382c32ee2a69a0c40c1c315230460ff.jpg",
+      drive_time: "15 mins"
     },
     {
       name: "Sometimes I'm Veg",
       store: "Ike's Sandwiches",
       cost: "$11.00",
-      image: "https://s3.amazonaws.com/trycaviar.com/offers/2/311.jpg"
+      image: "https://s3.amazonaws.com/trycaviar.com/offers/2/311.jpg",
+      drive_time: "10 mins"
     },
     {
       name: "4 Cheeses Pizza",
       store: "Pizza Siciliana",
       cost: "$9.00",
-      image: "http://www.goodhousekeeping.com/cm/goodhousekeeping/images/dQ/cheese-pizza-060711-mdn.jpg"
+      image: "http://www.goodhousekeeping.com/cm/goodhousekeeping/images/dQ/cheese-pizza-060711-mdn.jpg",
+      drive_time: "155 mins"
     },
     {
       name: "LivBlends",
       store: "Fratelly",
       cost: "$13.00",
-      image: "https://s3.amazonaws.com/trycaviar.com/offers/536/21755.jpg"
-    },
-    {
-      name: "Pineapple Fried Rice",
-      store: "Basil Thai",
-      cost: "$16.00",
-      image: "http://www.recipematcher.com/assets/photos/recipes/large/9382c32ee2a69a0c40c1c315230460ff.jpg"
-    },
-    {
-      name: "Sometimes I'm Veg",
-      store: "Ike's Sandwiches",
-      cost: "$4.00",
-      image: "https://s3.amazonaws.com/trycaviar.com/offers/2/311.jpg"
-    },
-    {
-      name: "Pineapple Fried Rice",
-      store: "Basil Thai",
-      cost: "$5.00",
-      image: "http://www.recipematcher.com/assets/photos/recipes/large/9382c32ee2a69a0c40c1c315230460ff.jpg"
-    },
-    {
-      name: "Sometimes I'm Veg",
-      store: "Ike's Sandwiches",
-      cost: "$12.00",
-      image: "https://s3.amazonaws.com/trycaviar.com/offers/2/311.jpg"
+      image: "https://s3.amazonaws.com/trycaviar.com/offers/536/21755.jpg",
+      drive_time: "5 mins"
     }
   ]
 }.to_query
